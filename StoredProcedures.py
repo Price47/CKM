@@ -11,6 +11,7 @@ TABLES = {}
 TABLES['area_trips'] = (
     "CREATE TABLE `area_trips` ("
     " `id` int NOT NULL AUTO_INCREMENT, "
+    " `location_id` int,"
     " `area` varchar(100),"
     " `period_start` time,"
     " `period_end` time,"
@@ -68,11 +69,56 @@ add_green_trip = ("INSERT INTO green_trip_data"
                    "%(pickup_latitude)s, %(dropoff_longitude)s, %(dropoff_latitude)s)"
 )
 
-populate_area_trips = ("INSERT INTO area_trips (period_start, period_end, area)"
-                       " SELECT TIME(%s), TIME(%s), "
+populate_area_trips = ("INSERT INTO area_trips (period_start, period_end, location_id, area)"
+                       " SELECT TIME(%s), TIME(%s), %s,"
                        " zone FROM geo_data WHERE locationid = %s"
 )
 
+get_yellow_outbound = ("""
+                        UPDATE area_trips SET area_trips.outbound_to_yellow_zone =
+                        (SELECT COUNT(yellow_trip_data.id)
+                         FROM yellow_trip_data, geo_data
+                            WHERE ST_CONTAINS(geo_data.shape, Point(yellow_trip_data.dropoff_longitude,
+                            yellow_trip_data.dropoff_latitude))
+                            and TIME(yellow_trip_data.pickup_datetime) BETWEEN  %(start_time)s AND %(end_time)s
+                            and geo_data.locationid = %(location_id)s)
+                        WHERE area_trips.location_id = %(location_id)s AND area_trips.period_start >= TIME(%(start_time)s)
+                        AND area_trips.period_end <= TIME(%(end_time)s)
+                        """)
+get_yellow_inbound = ("""
+                        UPDATE area_trips SET area_trips.inbound_from_yellow_zone =
+                        (SELECT COUNT(yellow_trip_data.id)
+                         FROM yellow_trip_data, geo_data
+                            WHERE ST_CONTAINS(geo_data.shape, Point(yellow_trip_data.pickup_longitude,
+                            yellow_trip_data.pickup_latitude))
+                            and TIME(yellow_trip_data.pickup_datetime) BETWEEN  %(start_time)s AND %(end_time)s
+                            and geo_data.locationid = %(location_id)s)
+                        WHERE area_trips.location_id = %(location_id)s AND area_trips.period_start >= TIME(%(start_time)s)
+                        AND area_trips.period_end <= TIME(%(end_time)s)
+                        """)
+get_green_outbound = ("""
+                        UPDATE area_trips SET area_trips.outbound_to_non_yellow_zone =
+                        (SELECT COUNT(green_trip_data.id)
+                         FROM green_trip_data, geo_data
+                            WHERE ST_CONTAINS(geo_data.shape, Point(green_trip_data.dropoff_longitude,
+                            green_trip_data.dropoff_latitude))
+                            and TIME(green_trip_data.pickup_datetime) BETWEEN  %(start_time)s AND %(end_time)s
+                            and geo_data.locationid = %(location_id)s)
+                        WHERE area_trips.location_id = %(location_id)s AND area_trips.period_start >= TIME(%(start_time)s)
+                        AND area_trips.period_end <= TIME(%(end_time)s)
+                        """)
+get_green_inbound = ("""
+                        UPDATE area_trips SET area_trips.inbound_from_non_yellow_zone =
+                        (SELECT COUNT(green_trip_data.id)
+                         FROM green_trip_data, geo_data
+                            WHERE ST_CONTAINS(geo_data.shape, Point(green_trip_data.pickup_longitude,
+                            green_trip_data.pickup_latitude))
+                            and TIME(green_trip_data.pickup_datetime) BETWEEN  %(start_time)s AND %(end_time)s
+                            and geo_data.locationid = %(location_id)s)
+                        WHERE area_trips.location_id = %(location_id)s AND area_trips.period_start >= TIME(%(start_time)s)
+                        AND area_trips.period_end <= TIME(%(end_time)s)
+                        """
+)
 
 
 

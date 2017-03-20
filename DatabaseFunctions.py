@@ -6,7 +6,9 @@ import datetime
 import subprocess
 
 from StoredProcedures import add_borough, create_database,\
-    add_green_trip, add_yellow_trip, populate_area_trips, TABLES
+    add_green_trip, add_yellow_trip, populate_area_trips, \
+    TABLES, get_green_outbound, get_yellow_outbound, get_green_inbound, \
+    get_yellow_inbound
 from Settings import database_config, DB_NAME
 import Scrape as s
 
@@ -44,6 +46,16 @@ for i in range(4):
     print i
 
 
+data = {'start_time' : timedelta(minutes=30),
+                                    'end_time' : timedelta(minutes=60),
+                                    'location_id' : 8}
+try:
+    cursor.execute(get_green_inbound, data)
+    cursor.execute(get_yellow_inbound, data)
+    cursor.execute(get_yellow_outbound, data)
+except mysql.connector.Error as err:
+    print err
+
 
 def createGeoTable(cursor, cursor2):
     subprocess.call(['./createGeoTable.sh'])
@@ -52,8 +64,10 @@ def createGeoTable(cursor, cursor2):
     for item in cursor2:
         dt = timedelta(minutes=0)
         while dt != timedelta(hours=23, minutes=30):
-            cursor.execute(populate_area_trips, (dt, dt + timedelta(minutes=30), item[0]))
+            cursor.execute(populate_area_trips, (dt, dt + timedelta(minutes=30), item[0], item[0]))
             dt = dt + timedelta(minutes=30)
+
+
 
 #
 # for link in links['yellowLinks']:
