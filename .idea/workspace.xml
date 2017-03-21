@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="70b314e8-daee-43f9-a78e-39efe5838f98" name="Default" comment="" />
+    <list default="true" id="70b314e8-daee-43f9-a78e-39efe5838f98" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Setup.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DatabaseFunctions.py" afterPath="$PROJECT_DIR$/DatabaseFunctions.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Main.py" afterPath="$PROJECT_DIR$/Main.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Scrape.py" afterPath="$PROJECT_DIR$/Scrape.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Settings.py" afterPath="$PROJECT_DIR$/Settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/StoredProcedures.py" afterPath="$PROJECT_DIR$/StoredProcedures.py" />
+    </list>
     <ignored path="CKM.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -20,14 +28,14 @@
     <favorites_list name="CKM" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.49618322">
+    <splitter split-orientation="horizontal" split-proportion="0.3865285">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="Scrape.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Scrape.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="278">
-                  <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+                <state relative-caret-position="630">
+                  <caret line="42" column="24" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
                   <folding>
                     <element signature="e#0#29#0" expanded="true" />
                   </folding>
@@ -38,18 +46,18 @@
           <file leaf-file-name="Settings.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Settings.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="120">
-                  <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+                <state relative-caret-position="90">
+                  <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="DatabaseFunctions.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/DatabaseFunctions.py">
+          <file leaf-file-name="Setup.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Setup.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="540">
-                  <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+                <state relative-caret-position="180">
+                  <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
                   <folding>
                     <element signature="e#0#22#0" expanded="true" />
                   </folding>
@@ -57,12 +65,14 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Main.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Main.py">
+          <file leaf-file-name="DatabaseFunctions.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/DatabaseFunctions.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="135">
-                  <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-                  <folding />
+                <state relative-caret-position="375">
+                  <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+                  <folding>
+                    <element signature="e#0#22#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -71,32 +81,35 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="StoredProcedures.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/StoredProcedures.py">
+          <file leaf-file-name="Main.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Main.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-112">
-                  <caret line="62" column="1" selection-start-line="62" selection-start-column="1" selection-end-line="63" selection-end-column="0" />
+                <state relative-caret-position="255">
+                  <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
                   <folding>
-                    <marker date="1490039686000" expanded="true" signature="726:1077" ph="CREATE TABLE... yellow_trip_data" />
-                    <marker date="1490039686000" expanded="true" signature="1117:1420" ph="CREATE TABLE... green_trip_data" />
-                    <marker date="1490039686000" expanded="true" signature="1117:1465" ph="CREATE TABLE... yellow_trip_data" />
-                    <marker date="1490039686000" expanded="true" signature="1487:1650" ph="INSERT INTO boroughs... " />
-                    <marker date="1490039686000" expanded="true" signature="1675:1703" ph="INSERT INTO yellow_trip_data... " />
-                    <marker date="1490039686000" expanded="true" signature="1675:1853" ph="INSERT INTO yellow_trip_data... " />
-                    <marker date="1490039686000" expanded="true" signature="1675:2035" ph="INSERT INTO yellow_trip_data... " />
-                    <marker date="1490039686000" expanded="true" signature="2059:2418" ph="INSERT INTO green_trip_data... " />
-                    <marker date="1490039686000" expanded="true" signature="2059:2419" ph="INSERT INTO green_trip_data... " />
+                    <element signature="e#0#22#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Settings.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Settings.py">
+          <file leaf-file-name="StoredProcedures.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/StoredProcedures.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="120">
-                  <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-                  <folding />
+                <state relative-caret-position="30">
+                  <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#0#22#0" expanded="true" />
+                    <marker date="1490069168000" expanded="true" signature="1633:1984" ph="CREATE TABLE... yellow_trip_data" />
+                    <marker date="1490069168000" expanded="true" signature="2024:2327" ph="CREATE TABLE... green_trip_data" />
+                    <marker date="1490069168000" expanded="true" signature="2024:2372" ph="CREATE TABLE... yellow_trip_data" />
+                    <marker date="1490069168000" expanded="true" signature="2450:2613" ph="INSERT INTO boroughs... " />
+                    <marker date="1490069168000" expanded="true" signature="2638:2666" ph="INSERT INTO yellow_trip_data... " />
+                    <marker date="1490069168000" expanded="true" signature="2638:2816" ph="INSERT INTO yellow_trip_data... " />
+                    <marker date="1490069168000" expanded="true" signature="2638:2998" ph="INSERT INTO yellow_trip_data... " />
+                    <marker date="1490069168000" expanded="true" signature="3022:3381" ph="INSERT INTO green_trip_data... " />
+                    <marker date="1490069168000" expanded="true" signature="3022:3382" ph="INSERT INTO green_trip_data... " />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -112,16 +125,20 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/__main__.py" />
-        <option value="$PROJECT_DIR$/Main.py" />
-        <option value="$PROJECT_DIR$/Settings.py" />
-        <option value="$PROJECT_DIR$/Scrape.py" />
         <option value="$PROJECT_DIR$/__init__.py" />
-        <option value="$PROJECT_DIR$/StoredProcedures.py" />
         <option value="$PROJECT_DIR$/DatabaseFunctions.py" />
+        <option value="$PROJECT_DIR$/Scrape.py" />
+        <option value="$PROJECT_DIR$/Main.py" />
+        <option value="$PROJECT_DIR$/StoredProcedures.py" />
+        <option value="$PROJECT_DIR$/Settings.py" />
+        <option value="$PROJECT_DIR$/Setup.py" />
       </list>
     </option>
   </component>
@@ -132,9 +149,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-111" />
-    <option name="y" value="24" />
-    <option name="width" value="1267" />
+    <option name="x" value="-39" />
+    <option name="y" value="23" />
+    <option name="width" value="1255" />
     <option name="height" value="765" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -162,7 +179,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -183,6 +199,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -191,6 +208,7 @@
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="ignore_missing_gitignore" value="true" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
@@ -352,10 +370,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-111" y="24" width="1267" height="765" extended-state="0" />
+    <frame x="-39" y="23" width="1255" height="765" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17284925" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09243028" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32902297" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -392,6 +410,63 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Scrape.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DatabaseFunctions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="55" column="36" selection-start-line="55" selection-start-column="36" selection-end-line="55" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StoredProcedures.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+            <marker date="1490069168000" expanded="true" signature="1633:1984" ph="CREATE TABLE... yellow_trip_data" />
+            <marker date="1490069168000" expanded="true" signature="2024:2327" ph="CREATE TABLE... green_trip_data" />
+            <marker date="1490069168000" expanded="true" signature="2024:2372" ph="CREATE TABLE... yellow_trip_data" />
+            <marker date="1490069168000" expanded="true" signature="2450:2613" ph="INSERT INTO boroughs... " />
+            <marker date="1490069168000" expanded="true" signature="2638:2666" ph="INSERT INTO yellow_trip_data... " />
+            <marker date="1490069168000" expanded="true" signature="2638:2816" ph="INSERT INTO yellow_trip_data... " />
+            <marker date="1490069168000" expanded="true" signature="2638:2998" ph="INSERT INTO yellow_trip_data... " />
+            <marker date="1490069168000" expanded="true" signature="3022:3381" ph="INSERT INTO green_trip_data... " />
+            <marker date="1490069168000" expanded="true" signature="3022:3382" ph="INSERT INTO green_trip_data... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Scrape.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -434,7 +509,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-          <folding />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -443,15 +520,16 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1490039686000" expanded="true" signature="726:1077" ph="CREATE TABLE... yellow_trip_data" />
-            <marker date="1490039686000" expanded="true" signature="1117:1420" ph="CREATE TABLE... green_trip_data" />
-            <marker date="1490039686000" expanded="true" signature="1117:1465" ph="CREATE TABLE... yellow_trip_data" />
-            <marker date="1490039686000" expanded="true" signature="1487:1650" ph="INSERT INTO boroughs... " />
-            <marker date="1490039686000" expanded="true" signature="1675:1703" ph="INSERT INTO yellow_trip_data... " />
-            <marker date="1490039686000" expanded="true" signature="1675:1853" ph="INSERT INTO yellow_trip_data... " />
-            <marker date="1490039686000" expanded="true" signature="1675:2035" ph="INSERT INTO yellow_trip_data... " />
-            <marker date="1490039686000" expanded="true" signature="2059:2418" ph="INSERT INTO green_trip_data... " />
-            <marker date="1490039686000" expanded="true" signature="2059:2419" ph="INSERT INTO green_trip_data... " />
+            <element signature="e#0#22#0" expanded="true" />
+            <marker date="1490069168000" expanded="true" signature="1633:1984" ph="CREATE TABLE... yellow_trip_data" />
+            <marker date="1490069168000" expanded="true" signature="2024:2327" ph="CREATE TABLE... green_trip_data" />
+            <marker date="1490069168000" expanded="true" signature="2024:2372" ph="CREATE TABLE... yellow_trip_data" />
+            <marker date="1490069168000" expanded="true" signature="2450:2613" ph="INSERT INTO boroughs... " />
+            <marker date="1490069168000" expanded="true" signature="2638:2666" ph="INSERT INTO yellow_trip_data... " />
+            <marker date="1490069168000" expanded="true" signature="2638:2816" ph="INSERT INTO yellow_trip_data... " />
+            <marker date="1490069168000" expanded="true" signature="2638:2998" ph="INSERT INTO yellow_trip_data... " />
+            <marker date="1490069168000" expanded="true" signature="3022:3381" ph="INSERT INTO green_trip_data... " />
+            <marker date="1490069168000" expanded="true" signature="3022:3382" ph="INSERT INTO green_trip_data... " />
           </folding>
         </state>
       </provider>
@@ -488,7 +566,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-          <folding />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -497,15 +577,16 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1490039686000" expanded="true" signature="726:1077" ph="CREATE TABLE... yellow_trip_data" />
-            <marker date="1490039686000" expanded="true" signature="1117:1420" ph="CREATE TABLE... green_trip_data" />
-            <marker date="1490039686000" expanded="true" signature="1117:1465" ph="CREATE TABLE... yellow_trip_data" />
-            <marker date="1490039686000" expanded="true" signature="1487:1650" ph="INSERT INTO boroughs... " />
-            <marker date="1490039686000" expanded="true" signature="1675:1703" ph="INSERT INTO yellow_trip_data... " />
-            <marker date="1490039686000" expanded="true" signature="1675:1853" ph="INSERT INTO yellow_trip_data... " />
-            <marker date="1490039686000" expanded="true" signature="1675:2035" ph="INSERT INTO yellow_trip_data... " />
-            <marker date="1490039686000" expanded="true" signature="2059:2418" ph="INSERT INTO green_trip_data... " />
-            <marker date="1490039686000" expanded="true" signature="2059:2419" ph="INSERT INTO green_trip_data... " />
+            <element signature="e#0#22#0" expanded="true" />
+            <marker date="1490069168000" expanded="true" signature="1633:1984" ph="CREATE TABLE... yellow_trip_data" />
+            <marker date="1490069168000" expanded="true" signature="2024:2327" ph="CREATE TABLE... green_trip_data" />
+            <marker date="1490069168000" expanded="true" signature="2024:2372" ph="CREATE TABLE... yellow_trip_data" />
+            <marker date="1490069168000" expanded="true" signature="2450:2613" ph="INSERT INTO boroughs... " />
+            <marker date="1490069168000" expanded="true" signature="2638:2666" ph="INSERT INTO yellow_trip_data... " />
+            <marker date="1490069168000" expanded="true" signature="2638:2816" ph="INSERT INTO yellow_trip_data... " />
+            <marker date="1490069168000" expanded="true" signature="2638:2998" ph="INSERT INTO yellow_trip_data... " />
+            <marker date="1490069168000" expanded="true" signature="3022:3381" ph="INSERT INTO green_trip_data... " />
+            <marker date="1490069168000" expanded="true" signature="3022:3382" ph="INSERT INTO green_trip_data... " />
           </folding>
         </state>
       </provider>
@@ -547,62 +628,74 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/createGeoTable.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DatabaseFunctions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StoredProcedures.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+            <marker date="1490069168000" expanded="true" signature="1633:1984" ph="CREATE TABLE... yellow_trip_data" />
+            <marker date="1490069168000" expanded="true" signature="2024:2327" ph="CREATE TABLE... green_trip_data" />
+            <marker date="1490069168000" expanded="true" signature="2024:2372" ph="CREATE TABLE... yellow_trip_data" />
+            <marker date="1490069168000" expanded="true" signature="2450:2613" ph="INSERT INTO boroughs... " />
+            <marker date="1490069168000" expanded="true" signature="2638:2666" ph="INSERT INTO yellow_trip_data... " />
+            <marker date="1490069168000" expanded="true" signature="2638:2816" ph="INSERT INTO yellow_trip_data... " />
+            <marker date="1490069168000" expanded="true" signature="2638:2998" ph="INSERT INTO yellow_trip_data... " />
+            <marker date="1490069168000" expanded="true" signature="3022:3381" ph="INSERT INTO green_trip_data... " />
+            <marker date="1490069168000" expanded="true" signature="3022:3382" ph="INSERT INTO green_trip_data... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-          <folding />
+        <state relative-caret-position="255">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Scrape.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="630">
+          <caret line="42" column="24" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/createGeoTable.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+        <state relative-caret-position="90">
+          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/StoredProcedures.py">
+    <entry file="file://$PROJECT_DIR$/Setup.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-112">
-          <caret line="62" column="1" selection-start-line="62" selection-start-column="1" selection-end-line="63" selection-end-column="0" />
-          <folding>
-            <marker date="1490039686000" expanded="true" signature="726:1077" ph="CREATE TABLE... yellow_trip_data" />
-            <marker date="1490039686000" expanded="true" signature="1117:1420" ph="CREATE TABLE... green_trip_data" />
-            <marker date="1490039686000" expanded="true" signature="1117:1465" ph="CREATE TABLE... yellow_trip_data" />
-            <marker date="1490039686000" expanded="true" signature="1487:1650" ph="INSERT INTO boroughs... " />
-            <marker date="1490039686000" expanded="true" signature="1675:1703" ph="INSERT INTO yellow_trip_data... " />
-            <marker date="1490039686000" expanded="true" signature="1675:1853" ph="INSERT INTO yellow_trip_data... " />
-            <marker date="1490039686000" expanded="true" signature="1675:2035" ph="INSERT INTO yellow_trip_data... " />
-            <marker date="1490039686000" expanded="true" signature="2059:2418" ph="INSERT INTO green_trip_data... " />
-            <marker date="1490039686000" expanded="true" signature="2059:2419" ph="INSERT INTO green_trip_data... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DatabaseFunctions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+        <state relative-caret-position="180">
+          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
           <folding>
             <element signature="e#0#22#0" expanded="true" />
           </folding>

@@ -1,8 +1,11 @@
+"""
+Database settings
+"""
 
 database_config = {
-  'user': 'root',
-  'password': 'root',
-  'unix_socket': '/Applications/MAMP/tmp/mysql/mysql.sock',
+  'user': 'admin',
+  'password': 'adminuser',
+  'host':'127.0.0.1',
   'raise_on_warnings': True
 }
 

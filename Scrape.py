@@ -5,6 +5,12 @@ import re
 import csv
 
 def getData():
+    """
+    find csv links from nyc gov website, and sort into green trip csv's,
+    yellow trip csv's, and borough info csv.
+
+    :return: Dict of links
+    """
     page = requests.get("http://www.nyc.gov/html/tlc/html/about/trip_record_data.shtml")
     soup = BeautifulSoup(page.content, 'html.parser')
     hrefs = soup.select("tbody tr td a")
@@ -33,6 +39,12 @@ def getData():
     return {'greenLinks' : green_list, 'yellowLinks' : yellow_list, 'boroughIds' : borough_ids}
 
 def getCSV(csv_link):
+    """
+    returns data list of decoded CSV file
+
+    :param csv_link: csv file to download
+    :return:
+    """
 
     info = requests.get(csv_link)
     decoded_content = info.content.decode('utf-8')

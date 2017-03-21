@@ -1,10 +1,37 @@
-def create_database(cursor):
+import mysql.connector
+from mysql.connector import errorcode
+
+def create_database(cursor, DB_NAME):
     try:
+        cursor.execute("set global innodb_file_format=Barracuda;")
         cursor.execute(
             "CREATE DATABASE {} DEFAULT CHARACTER SET 'utf8'".format(DB_NAME))
     except mysql.connector.Error as err:
         print("Failed creating database: {}".format(err))
         exit(1)
+
+def compress_table(sql_connection, cursor, table_name, database):
+    """
+    compress a table and archive it, then remove data from table
+
+    :param sql_connection:
+    :param cursor:
+    :param table_name:
+    :param database:
+    :return:
+    """
+    try:
+        cursor.execute("use {0}".format(database))
+        cursor.execute("create table `{0}_archive` like `{0}`".format(table_name))
+        cursor.execute("alter table `{0}_archive` key_block_size=4 row_format=compressed".format(table_name))
+        cursor.execute("insert into `{0}_archive` select * from `{0}`".format(table_name))
+        cursor.execute("delete from `{0}`".format(table_name))
+
+        sql_connection.commit()
+    except mysql.connector.Error as err:
+        print(err)
+        exit(1)
+
 
 TABLES = {}
 
@@ -49,6 +76,7 @@ TABLES['green_trip_data'] = (
     ") ENGINE=InnoDB"
 )
 
+get_geo_locations = ("SELECT locationid FROM geo_data")
 
 add_borough = ("INSERT INTO boroughs "
                "(borough_id, borough, zone, service_zone) "
@@ -84,6 +112,7 @@ get_yellow_outbound = ("""
                             and geo_data.locationid = %(location_id)s)
                         WHERE area_trips.location_id = %(location_id)s AND area_trips.period_start >= TIME(%(start_time)s)
                         AND area_trips.period_end <= TIME(%(end_time)s)
+
                         """)
 get_yellow_inbound = ("""
                         UPDATE area_trips SET area_trips.inbound_from_yellow_zone =
